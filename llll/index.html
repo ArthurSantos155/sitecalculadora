@@ -12,47 +12,54 @@
 
 <h1>Clicker game</h1>
 <h2>Pontos</h2>
-<h3>0 pontos</h3>
+
+
+<h3> <span id ="pontos">0</span> </h3>
 <div class="bbox">
  <div class="box" >
-<button onclick="click()">click for points </button>
+<button onclick="clicker()">click for points </button>
 </div>
 </div>
 <br>
 <h2>Upgrades</h2>
 
 <div class="box" >
-    <button onclick="click()">Upgrade 1 </button>
+    <button onclick="upgrade1()">Upgrade 1 </button>
 
-    <p> Preço: 50 pontos</p>
+    <p> Preco: <span id ="upgrade1preco">50</span> Pontos</p>
 </div>
 
 <br>
 
 <div class="box" >
-    <button onclick="click()">Upgrade 2 </button>
-    <p> Preço: 1000 pontos</p>
+    <button onclick="upgrade2()">Upgrade 2 </button>
+    <p> Preço: <span id ="upgrade2preco">150</span> Pontos</p>
 </div>
 </div>
 <br>
 
 <div class="box" >
-    <button onclick="click()">Upgrade 3 </button>
-    <p> Preço: 3500 pontos</p>
-</div>
+    <button onclick="upgrade3()">Upgrade 3 </button>
+<p> Preço: <span id ="upgrade3preco">3500</span> Pontos</p></div>
 
 <br>
 
 <div class="box" >
-    <button onclick="click()">Upgrade 4 </button>
-    <p> Preço: 6500 pontos</p>
-</div>
+   <button onclick="upgrade4()">Upgrade 4</button>
+<p> Preço: <span id ="upgrade4preco">6500</span> Pontos</p></div>
 </div>
 <br>
 
 <div class="box" >
-    <button onclick="click()">Upgrade 5 </button>
-    <p> Preço: 10000 pontos</p>
+    <button onclick="upgrade5()">Upgrade 5 </button>
+     
+   <p> Preço: <span id ="upgrade5preco">10000</span> Pontos</p>
+</div>
+
+<div class="box" >
+    <button onclick="comprarPontosPorSeg()">Pontos por segundo </button>
+     
+    <p> Preço: 200 pontos</p>
 </div>
 
 
@@ -60,7 +67,7 @@
 
 
 
-
+<script src="script.js"></script>
 
 </body>
 </html>

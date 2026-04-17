@@ -24,7 +24,7 @@ h1 , h2, h3{
 .bbox{
     display: flex;
     justify-content: center;
-    width: 50%%;
+    width: 50%;
    
     padding: 20px;
 }
