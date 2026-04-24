@@ -1,4 +1,4 @@
-let pontos = 100000;
+let pontos = 0;
 let click = 1;
 
 let upgrade1forca = 1;
@@ -33,6 +33,8 @@ function clicker(){
     click = 1 + (upgrade1quantidade * upgrade1forca) + (upgrade2quantidade * upgrade2forca);
     pontos = pontos + click;
     document.getElementById('pontos').textContent = pontos;
+        localStorage.setItem('pontos', pontos);
+
 }
 
 function upgrade1(){
@@ -103,3 +105,8 @@ function comprarPontosPorSeg(){
         document.getElementById('pontosPorSegPre').textContent = pontosPorSegPreco;
     }
 }
+
+setInterval(function(){
+    localStorage.setItem('pontos', pontos);
+    localStorage.setItem('pontosPorSeg', pontosPorSegPreco)
+},1000)
